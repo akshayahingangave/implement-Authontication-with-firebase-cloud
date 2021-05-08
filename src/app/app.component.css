@@ -1,0 +1,26 @@
+.container{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+h2{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: blueviolet;
+    border-bottom: 1px dotted blueviolet;
+}
+.signin{
+    padding-bottom: 15px;
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+}
+button{
+    border: rgb(49, 86, 134);
+    background-color: rgb(49, 86, 134);
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100px;
+    color: white;
+}

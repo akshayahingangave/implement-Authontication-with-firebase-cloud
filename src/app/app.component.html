@@ -1,0 +1,38 @@
+<app-header></app-header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+
+      <div *ngIf="!isSignedIn" class="signin">
+        <h2>Sign In</h2><br>
+        <div class="row">
+          <div class="col-md-4">
+            User Id :
+          </div>
+          <div class="col-md-8">
+            <input type="text" #email placeholder="email" />
+          </div>
+        </div><br>
+        <div class="row">
+          <div class="col-md-4">
+            Password :
+          </div>
+          <div class="col-md-8">
+            <input type="text" #password placeholder="password" />
+          </div>
+        </div><br>
+        <button (click)="onSignin(email.value, password.value)">
+          Sign In
+        </button>
+      </div>
+
+      <app-home *ngIf="isSignedIn" (isLogout)="handleLogout()"></app-home>
+
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+</div>
+
+<app-footer></app-footer>
